@@ -18,3 +18,15 @@ end
 def reverse_array(arr)
   arr.reverse
 end
+
+
+def kesha_maker(arr)
+  new_arr = []
+
+  arr.each do |ele|
+    new_ele = ele.gsub(ele[2], '$')
+    new_arr << new_ele
+  end
+
+  return new_arr
+end
