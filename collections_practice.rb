@@ -30,3 +30,7 @@ def kesha_maker(arr)
 
   return new_arr
 end
+
+def find_a(arr)
+  arr.select { |ele| ele.start_with("a") }
+end
