@@ -34,3 +34,17 @@ end
 def find_a(arr)
   arr.select { |ele| ele.start_with("a") }
 end
+
+def sum_array(arr)
+  sum = 0
+  arr.each { |num| sum += num }
+  return sum
+end
+
+def add_s(arr)
+  arr.each_with_index.collect do |word, idx|
+    if idx != 1
+      word += "s"
+    end
+  end
+end
